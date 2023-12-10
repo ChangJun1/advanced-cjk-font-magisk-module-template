@@ -37,7 +37,7 @@
         <font weight="900" style="italic">EmptyFont-BlackItalic.ttf</font>
         <font weight="700" style="normal">EmptyFont-Bold.ttf</font>
         <font weight="700" style="italic">EmptyFont-BoldItalic.ttf</font>
-   </family>
+    </family>
     <!-- lxgw 注：其次调用自定义字体，自定义字体将在 CJK 部分再次调用 -->
     <family>
         <font weight="100" style="normal">fontenw1.ttf</font>
@@ -179,7 +179,7 @@
     <alias name="tahoma" to="sans-serif" />
     <alias name="verdana" to="sans-serif" />
     
-    <!-- lxgw 注：屏蔽 Condensed 及 Serif 字体以提高覆盖率 -->
+    <!-- lxgw 注：屏蔽 Condensed 及 Serif 字体以提高覆盖率
     <alias name="sans-serif-condensed" to="sans-serif" />
     <alias name="sans-serif-condensed-light" to="sans-serif-condensed" weight="300" />
     <alias name="sans-serif-condensed-medium" to="sans-serif-condensed" weight="500" />
@@ -193,9 +193,9 @@
     <alias name="goudy" to="serif" />
     <alias name="fantasy" to="serif" />
     <alias name="ITC Stone Serif" to="serif" />
-    <!-- lxgw 注：屏蔽 Condensed 及 Serif 字体以提高覆盖率 （终）-->
+    lxgw 注：屏蔽 Condensed 及 Serif 字体以提高覆盖率 （终） -->
 
-    <!-- <family name="sans-serif-condensed">
+    <family name="sans-serif-condensed">
       <font weight="100" style="normal">Roboto-Regular.ttf
         <axis tag="ital" stylevalue="0" />
         <axis tag="wdth" stylevalue="75" />
@@ -304,7 +304,7 @@
     <alias name="baskerville" to="serif" />
     <alias name="goudy" to="serif" />
     <alias name="fantasy" to="serif" />
-    <alias name="ITC Stone Serif" to="serif" /> -->
+    <alias name="ITC Stone Serif" to="serif" />
 
     <family name="monospace">
         <font weight="400" style="normal">DroidSansMono.ttf</font>
@@ -323,9 +323,12 @@
     </family>
 
     <family name="cursive">
-        <font weight="400" style="normal" postScriptName="DancingScript">DancingScript-Regular.ttf
+        <font weight="400" style="normal">DancingScript-Regular.ttf
+            <axis tag="wght" stylevalue="400" />
         </font>
-        <font weight="700" style="normal">DancingScript-Bold.ttf</font>
+        <font weight="700" style="normal">DancingScript-Regular.ttf
+            <axis tag="wght" stylevalue="700" />
+        </font>
     </family>
 
     <family name="sans-serif-smallcaps">
@@ -1993,6 +1996,9 @@
     </family>
     <family>
         <font weight="400" style="normal">TH-Tshyn-P2.ttf</font>
+    </family>
+    <family>
+        <font weight="400" style="normal">TH-Tshyn-P16.ttf</font>
     </family>
     <!-- lxgw 注：最后增加对「天珩全字库」的支持 （终）-->    
 </familyset>
